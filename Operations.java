@@ -6,12 +6,10 @@ import java.util.concurrent.BlockingQueue;
 class Operations{
     private Queue<Integer> ls;
     private boolean valueProduced;
-    private BlockingQueue<Integer> bq;
 
     Operations(){
         ls = new LinkedList<>();
         valueProduced = false;
-        bq  = new ArrayBlockingQueue<>(20);
     }
 
     public synchronized void setValue(){
